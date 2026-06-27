@@ -1,3 +1,4 @@
+
 SafeBus Alberta — Architecture Document v1
 1. Architecture Goal
 SafeBus Alberta is a school transportation operations platform focused on:
