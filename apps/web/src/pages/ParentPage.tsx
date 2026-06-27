@@ -17,11 +17,7 @@ export function ParentPage() {
             <StatusBadge tone="green">On time</StatusBadge>
           </div>
           <div className="mt-8 grid gap-3 sm:grid-cols-3">
-
-            {["Depot", "School zone", "Arrival window"].map((step, index) => (
-
             {['Depot', 'School zone', 'Arrival window'].map((step, index) => (
-
               <div className="rounded-2xl bg-slate-950/50 p-4" key={step}>
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Step {index + 1}</p>
                 <p className="mt-2 font-semibold text-white">{step}</p>
