@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "allowJs": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@safebus/api": ["../../packages/api/src/index.ts"],
+      "@safebus/types": ["../../packages/types/src/index.ts"],
+      "@safebus/ui": ["../../packages/ui/src/index.tsx"]
+    }
+  },
+  "include": ["src"]
+}
