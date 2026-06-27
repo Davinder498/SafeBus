@@ -1,0 +1,3 @@
+import { NavLink, Outlet } from "react-router-dom";
+const links = ["students","bus","timeline","notifications","help"];
+export function ParentLayout() { return <div className="mx-auto min-h-screen max-w-3xl bg-slate-50 p-4"><header className="mb-5"><h1 className="text-2xl font-black">SafeBus Parent</h1><p className="text-sm text-slate-500">Track the bus, not the child.</p><nav className="mt-4 flex gap-2 overflow-x-auto">{links.map((l) => <NavLink className="rounded-full bg-white px-3 py-2 text-sm font-semibold shadow-sm" to={`/parent/${l}`} key={l}>{l}</NavLink>)}</nav></header><Outlet /></div>; }
