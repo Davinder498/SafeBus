@@ -15,6 +15,18 @@ const topNavItems = [
   { to: "/driver-demo", label: "Driver demo" },
 ];
 
+function AppRoutes() {
+  return (
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/admin" element={<AdminPage />} />
+      <Route path="/parent" element={<ParentPage />} />
+      <Route path="/driver-demo" element={<DriverDemoPage />} />
+    </Routes>
+  );
+}
+
 function RootLayout() {
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,0.22),_transparent_32rem),#020617] text-white">
@@ -45,13 +57,7 @@ function RootLayout() {
         </nav>
       </header>
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12">
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/admin" element={<AdminPage />} />
-          <Route path="/parent" element={<ParentPage />} />
-          <Route path="/driver-demo" element={<DriverDemoPage />} />
-        </Routes>
+        <AppRoutes />
       </main>
     </div>
   );
